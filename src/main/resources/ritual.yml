@@ -1,0 +1,20 @@
+# Editable names, lore, and short title/action-bar text for MeteoriteDrop ritual items.
+# PDC tags that identify the special items are applied by the plugin automatically.
+items:
+  anchor:
+    name: "&5&l✦ Ancla del Ritual Meteorítico"
+    lore:
+      - "&7El núcleo de una invocación celestial."
+      - "&dColócala y úsala con la Carga Ígnea Ritual."
+      - "&8Solo sirven los objetos entregados por MeteoriteDrop."
+  fire-charge:
+    name: "&c&l☄ Carga Ígnea Ritual"
+    lore:
+      - "&7Energía sellada para iniciar un ritual."
+      - "&eClic derecho sobre un Ancla del Ritual."
+      - "&8Se consume cuando la invocación comienza."
+
+countdown:
+  title: "&d&l¡Has invocado un Meteorito!"
+  subtitle: "&7Prepárate para la llegada"
+  actionbar: "&dEl meteorito caerá en &f{seconds} &dsegundos..."

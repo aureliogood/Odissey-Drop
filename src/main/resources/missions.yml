@@ -1,0 +1,128 @@
+# Edit objectives, targets and rewards here. Changes apply with /md reload.
+# Player progress is stored separately in mission-progress.yml.
+missions:
+  capture_1:
+    enabled: true
+    name: "§ePrimer impacto"
+    icon: "IRON_INGOT"
+    target: 1
+    description: ["Abre tu primer cofre de meteorito."]
+    rewards: {money: 250, xp: 10}
+  capture_5:
+    enabled: true
+    name: "§bCazador de meteoritos"
+    icon: "DIAMOND"
+    target: 5
+    description: ["Captura cinco cofres de meteorito."]
+    rewards: {money: 1000, xp: 30}
+  capture_10:
+    enabled: true
+    name: "§dLeyenda cósmica"
+    icon: "NETHER_STAR"
+    target: 10
+    description: ["Captura diez cofres de meteorito."]
+    rewards: {money: 3000, xp: 75}
+  ritual_1:
+    enabled: true
+    name: "§dLlamada estelar"
+    icon: "END_CRYSTAL"
+    objective: rituals
+    target: 1
+    description: ["Ayuda a invocar un meteorito ritual."]
+    rewards: {money: 750, xp: 25}
+
+daily-missions:
+  daily_capture_1:
+    name: "§eCazador diario"
+    icon: "GOLD_INGOT"
+    target: 1
+    description: ["Captura un meteorito hoy."]
+    rewards: {money: 150, xp: 8}
+  daily_capture_3:
+    name: "§6Lluvia diaria"
+    icon: "BLAZE_POWDER"
+    target: 3
+    description: ["Captura tres meteoritos hoy."]
+    rewards: {money: 400, xp: 18}
+  daily_capture_5:
+    name: "§cAventura diaria"
+    icon: "FIREWORK_ROCKET"
+    target: 5
+    description: ["Captura cinco meteoritos hoy."]
+    rewards: {money: 750, xp: 30}
+  daily_guardians_5:
+    name: "§cCazador de guardianes"
+    icon: "IRON_SWORD"
+    objective: guardian-kills
+    target: 5
+    description: ["Derrota cinco criaturas de meteoritos hoy."]
+    rewards: {money: 300, xp: 20}
+  daily_role_1:
+    name: "§bEn tu puesto"
+    icon: "SHIELD"
+    objective: role
+    target: 1
+    description: ["Elige un rol de combate junto a un meteorito."]
+    rewards: {money: 200, xp: 15}
+  daily_damage_1:
+    name: "§cContraataque"
+    icon: "IRON_SWORD"
+    objective: damage
+    target: 25
+    description: ["Golpea guardianes de meteorito 25 veces hoy."]
+    rewards: {money: 250, xp: 15}
+  daily_healing_1:
+    name: "§aApoyo estelar"
+    icon: "GOLDEN_APPLE"
+    objective: healing
+    target: 10
+    description: ["Cura aliados durante combates 10 veces hoy."]
+    rewards: {money: 250, xp: 15}
+
+weekly-missions:
+  weekly_capture_5:
+    name: "§bExplorador semanal"
+    icon: "COMPASS"
+    target: 5
+    description: ["Captura cinco meteoritos esta semana."]
+    rewards: {money: 1000, xp: 40}
+  weekly_capture_10:
+    name: "§dCazador semanal"
+    icon: "DIAMOND_BLOCK"
+    target: 10
+    description: ["Captura diez meteoritos esta semana."]
+    rewards: {money: 2500, xp: 85}
+  weekly_capture_20:
+    name: "§5Leyenda semanal"
+    icon: "NETHER_STAR"
+    target: 20
+    description: ["Captura veinte meteoritos esta semana."]
+    rewards: {money: 6000, xp: 175}
+  weekly_guardians_25:
+    name: "§4Exterminador cósmico"
+    icon: "NETHERITE_SWORD"
+    objective: guardian-kills
+    target: 25
+    description: ["Derrota 25 guardianes esta semana."]
+    rewards: {money: 2500, xp: 100}
+  weekly_cooperation_3:
+    name: "§dResonancia de equipo"
+    icon: "AMETHYST_SHARD"
+    objective: cooperation
+    target: 3
+    description: ["Activa tres objetivos cooperativos esta semana."]
+    rewards: {money: 1500, xp: 80}
+  weekly_damage_100:
+    name: "§4Rompeguardias"
+    icon: "NETHERITE_AXE"
+    objective: damage
+    target: 100
+    description: ["Golpea guardianes de meteorito 100 veces esta semana."]
+    rewards: {money: 1500, xp: 70}
+  weekly_healing_50:
+    name: "§aSanador del cráter"
+    icon: "BEACON"
+    objective: healing
+    target: 50
+    description: ["Ayuda a tus aliados en combate 50 veces esta semana."]
+    rewards: {money: 1500, xp: 70}

@@ -1,0 +1,29 @@
+name: MeteoriteDrop
+version: '${project.version}'
+main: com.meteoritedrop.MeteoriteDrop
+api-version: '1.21'
+author: juanj
+description: Dynamic Meteorite Drop Event Plugin for Paper 1.21.x servers
+softdepend: [Vault, nonchat, WorldGuard]
+
+commands:
+  meteorito:
+    description: Abre el menú de misiones de meteoritos
+    usage: /meteorito
+
+  meteoritedrop:
+    aliases:
+      - md
+    description: Main MeteoriteDrop administration command
+    usage: /<command> [gui | drop [tipo] [x] [z] | tp [mundo,x,z] | reload]
+
+permissions:
+  meteoritedrop.admin:
+    description: Allows triggering meteorite drops, managing GUIs, and reloading configuration
+    default: op
+
+  meteoritedrop.discordchat:
+    description: Allows forwarding a player's Minecraft chat to Discord
+    default: true
+
+

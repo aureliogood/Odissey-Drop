@@ -1,0 +1,395 @@
+# ========================================================
+#             MeteoriteDrop Configuration
+# ========================================================
+
+# Jefes opcionales. Solo aparecen en tipos con boss.enabled: true.
+special-boss:
+  enabled: true
+  health: 300
+  ability-enabled: true
+  ability-cooldown-seconds: 10
+  ability-radius: 8
+  ability-damage: 6.0
+  bossbar-radius: 128
+  update-ticks: 10
+  loot: ["NETHER_STAR:2", "TOTEM_OF_UNDYING:1"]
+
+meteor-types:
+  lava:
+    display-name: "&c☄ Meteorito de Lava"
+    icon: "MAGMA_BLOCK"
+    falling-block: "MAGMA_BLOCK"
+    crater-main: "NETHERRACK"
+    crater-rim: "OBSIDIAN"
+    crater-scatter: "MAGMA_BLOCK"
+    crater-radius: 5
+    crater-depth: 3
+    lock-duration-seconds: 120
+    unlock-duration-seconds: 5
+    loot:
+      - "DIAMOND:3"
+      - "EMERALD:5"
+      - "GOLD_INGOT:10"
+      - "IRON_INGOT:16"
+      - "NETHERITE_SCRAP:1"
+      - "GOLDEN_APPLE:2"
+  ice:
+    display-name: "&b❄ Meteorito de Hielo"
+    icon: "PACKED_ICE"
+    falling-block: "PACKED_ICE"
+    crater-main: "SNOW_BLOCK"
+    crater-rim: "PACKED_ICE"
+    crater-scatter: "ICE"
+    crater-radius: 5
+    crater-depth: 3
+    lock-duration-seconds: 90
+    unlock-duration-seconds: 5
+    loot:
+      - "DIAMOND:2"
+      - "EMERALD:3"
+      - "SNOWBALL:16"
+      - "PACKED_ICE:8"
+      - "BLUE_ICE:2"
+  end:
+    display-name: "&d🔮 Meteorito del End"
+    icon: "ENDER_EYE"
+    falling-block: "PURPUR_BLOCK"
+    crater-main: "END_STONE"
+    crater-rim: "PURPUR_BLOCK"
+    crater-scatter: "CRYING_OBSIDIAN"
+    crater-radius: 6
+    crater-depth: 3
+    lock-duration-seconds: 150
+    unlock-duration-seconds: 6
+    loot:
+      - "ENDER_PEARL:8"
+      - "DIAMOND:4"
+      - "NETHERITE_SCRAP:2"
+      - "SHULKER_SHELL:4"
+      - "ELYTRA:1"
+      - "EXPERIENCE_BOTTLE:16"
+  divine:
+    display-name: "&e⚡ Meteorito Celestial"
+    icon: "GOLD_BLOCK"
+    falling-block: "GOLD_BLOCK"
+    crater-main: "QUARTZ_BLOCK"
+    crater-rim: "GOLD_BLOCK"
+    crater-scatter: "LAPIS_BLOCK"
+    crater-radius: 5
+    crater-depth: 3
+    lock-duration-seconds: 180
+    unlock-duration-seconds: 6
+    loot:
+      - "ENCHANTED_GOLDEN_APPLE:1"
+      - "TOTEM_OF_UNDYING:1"
+      - "DIAMOND:5"
+      - "EMERALD_BLOCK:2"
+      - "EXPERIENCE_BOTTLE:32"
+  toxic:
+    display-name: "&2☣ Meteorito Corrupto"
+    icon: "SCULK_CATALYST"
+    falling-block: "SCULK"
+    crater-main: "SCULK"
+    crater-rim: "CRYING_OBSIDIAN"
+    crater-scatter: "SCULK_VEIN"
+    crater-radius: 6
+    crater-depth: 4
+    lock-duration-seconds: 120
+    unlock-duration-seconds: 5
+    loot:
+      - "NETHERITE_INGOT:1"
+      - "DIAMOND:4"
+      - "POISONOUS_POTATO:5"
+      - "EXPERIENCE_BOTTLE:24"
+  storm:
+    display-name: "&9⚡ Meteorito de Tormenta"
+    icon: "LIGHTNING_ROD"
+    falling-block: "COPPER_BLOCK"
+    crater-main: "OXIDIZED_COPPER"
+    crater-rim: "LIGHTNING_ROD"
+    crater-scatter: "WEATHERED_COPPER"
+    crater-radius: 5
+    crater-depth: 3
+    lock-duration-seconds: 100
+    unlock-duration-seconds: 5
+    loot:
+      - "TRIDENT:1"
+      - "DIAMOND:3"
+      - "COPPER_INGOT:32"
+      - "IRON_BLOCK:2"
+  electric:
+    display-name: "&b⚡ Meteorito Eléctrico"
+    icon: "LIGHTNING_ROD"
+    falling-block: "COPPER_BLOCK"
+    crater-main: "COPPER_BLOCK"
+    crater-rim: "LIGHTNING_ROD"
+    crater-scatter: "AMETHYST_BLOCK"
+    crater-radius: 5
+    crater-depth: 3
+    lock-duration-seconds: 90
+    unlock-duration-seconds: 5
+    loot:
+      - "TRIDENT:1"
+      - "COPPER_INGOT:32"
+      - "DIAMOND:3"
+  void:
+    display-name: "&5✦ Meteorito del Vacío"
+    icon: "CRYING_OBSIDIAN"
+    falling-block: "OBSIDIAN"
+    crater-main: "OBSIDIAN"
+    crater-rim: "CRYING_OBSIDIAN"
+    crater-scatter: "PURPUR_BLOCK"
+    crater-radius: 7
+    crater-depth: 5
+    lock-duration-seconds: 180
+    unlock-duration-seconds: 8
+    loot:
+      - "ENDER_PEARL:16"
+      - "SHULKER_SHELL:2"
+      - "NETHERITE_SCRAP:3"
+      - "DIAMOND:6"
+    requires-key: true
+    key-material: "TRIPWIRE_HOOK"
+    key-price: 750
+  legendary:
+    display-name: "&d✦ Meteorito Legendario"
+    icon: "NETHER_STAR"
+    falling-block: "ANCIENT_DEBRIS"
+    crater-main: "CRYING_OBSIDIAN"
+    crater-rim: "AMETHYST_BLOCK"
+    crater-scatter: "GLOWSTONE"
+    crater-radius: 9
+    crater-depth: 6
+    lock-duration-seconds: 240
+    unlock-duration-seconds: 12
+    guardian-count: 10
+    guardian-mobs: ["EVOKER", "RAVAGER", "VINDICATOR", "PILLAGER", "WITCH"]
+    guardian-waves:
+      count: 5
+      interval-seconds: 20
+    reward-money: 5000.0
+    reward-xp: 250
+    requires-key: false
+    loot:
+      - "NETHERITE_INGOT:4"
+      - "NETHER_STAR:3"
+      - "ELYTRA:1"
+      - "TOTEM_OF_UNDYING:3"
+      - "DIAMOND_BLOCK:16"
+    guardian-final-reward: ["NETHER_STAR:4", "ELYTRA:1", "TOTEM_OF_UNDYING:2"]
+    boss:
+      enabled: true
+      name: "&d☄ Coloso de las Estrellas"
+      health: 500
+      loot: ["NETHER_STAR:4", "NETHERITE_INGOT:2", "TOTEM_OF_UNDYING:1"]
+  meteoriteritual:
+    display-name: "&5☄ MeteoriteRitual"
+    icon: "CRYING_OBSIDIAN"
+    falling-block: "OBSIDIAN"
+    crater-main: "NETHERRACK"
+    crater-rim: "CRYING_OBSIDIAN"
+    crater-scatter: "SCULK"
+    crater-radius: 8
+    crater-depth: 5
+    lock-duration-seconds: 180
+    unlock-duration-seconds: 10
+    guardian-count: 8
+    reward-money: 2500.0
+    reward-xp: 150
+    requires-key: false
+    loot:
+      - "NETHERITE_INGOT:2"
+      - "ELYTRA:1"
+      - "TOTEM_OF_UNDYING:2"
+      - "NETHER_STAR:2"
+      - "DIAMOND_BLOCK:8"
+    guardian-final-reward: ["NETHER_STAR:2", "ELYTRA:1", "TOTEM_OF_UNDYING:2"]
+    boss:
+      enabled: true
+      name: "&5☄ Titán del Ritual"
+      health: 600
+      loot: ["NETHER_STAR:5", "NETHERITE_INGOT:3", "TOTEM_OF_UNDYING:2"]
+  normal:
+    display-name: "&e📦 Suministro Normal"
+    icon: "CHEST"
+    falling-block: "CHEST"
+    crater-main: "AIR"
+    crater-rim: "AIR"
+    crater-scatter: "AIR"
+    crater-radius: 0
+    crater-depth: 0
+    lock-duration-seconds: 60
+    unlock-duration-seconds: 0
+    reward-money: 300.0
+    reward-xp: 50
+    loot:
+      - "DIAMOND:3"
+      - "IRON_INGOT:12"
+      - "GOLD_INGOT:8"
+      - "GOLDEN_APPLE:2"
+      - "ENDER_PEARL:4"
+      - "EXPERIENCE_BOTTLE:8"
+      - "COOKED_BEEF:16"
+
+# Economy & Progression Settings
+season-reward-money: 5000.0
+consolation-xp: 15
+consolation-xp-cooldown-seconds: 3600
+max-active-meteors: 3
+
+# Hard limits for event mobs to prevent large showers from overwhelming the server.
+performance:
+  max-guardians-per-meteor: 80
+  max-active-guardians: 240
+
+# Scheduled automatic meteorite drop event
+auto-drop:
+  enabled: true
+  interval-minutes: 90
+  min-players: 1
+  broadcast-warnings:
+    - 10
+    - 5
+    - 1
+  worlds:
+    - "world"
+  random-radius: 800
+  schedule:
+    enabled: false
+    # Horario local del servidor, formato 24 h: ["18:00", "21:30"]
+    times: []
+    # MONDAY a SUNDAY; vacío significa todos los días.
+    days: []
+    chance-percent: 100
+
+meteor-rarity:
+  enabled: true
+  chance-percent: 5
+  rare-types: ["divine", "void", "legendary"]
+rarity-alerts:
+  enabled: true
+  message: "&d✦ ¡Un meteorito raro ha impactado! {type} en X: {x}, Z: {z}. ¡Vayan por el botín especial!"
+anti-abuse:
+  manual-drop-cooldown-seconds: 15
+guardian-waves:
+  count: 4
+  interval-seconds: 25
+  announce: true
+
+# Cooperative crystals spawn around configured meteorites. Distinct players must activate them.
+cooperative:
+  enabled: true
+  meteor-types: ["legendary"]
+  objectives: 5
+  required-players: 3
+  start-message: "&d✦ El meteorito legendario está protegido. Hay {objectives} puntos; deben activarlos {required} jugadores distintos."
+  locked-message: "&cEl grupo debe activar puntos de resonancia con {remaining} jugador(es) distinto(s) más."
+  complete-message: "&d✦ ¡Resonancia completada! El cofre legendario ya puede disputarse."
+
+combat-roles:
+  duration-seconds: 900
+  # Players may select one role with /md role <tank|sanador|explorador> near an active meteor.
+
+participation:
+  damage-points-per-health: 0.1
+  points-per-guardian-kill: 10
+  healing-points-per-health: 0.2
+  minimum-points: 1
+  money-per-point: 2.0
+  xp-per-point: 1
+
+event-announcements:
+  ritual-event-start: "&5☄ &d¡Evento MeteoriteRitual activado! Los jugadores elegibles pueden invocar con el altar."
+  ritual-event-stop: "&5☄ &7El evento MeteoriteRitual ha terminado."
+  ritual-start: "&5☄ &d{player} ha invocado un meteorito en X: {x}, Z: {z} ({world}). ¡Prepárense para ir por él!"
+  ritual-fall: "&5☄ &d¡El Meteorito Ritual de {player} está cayendo hacia X: {x}, Z: {z} ({world})!"
+  ritual-start-sound: "BLOCK_BEACON_ACTIVATE"
+  ritual-fall-sound: "ENTITY_ENDER_DRAGON_GROWL"
+  guardian-wave-message: "&c☠ Oleada {wave}/{total} de guardianes cerca del meteorito!"
+  victory-sound: "UI_TOAST_CHALLENGE_COMPLETE"
+  incoming-sound: "ENTITY_WITHER_SPAWN"
+  legendary-sound: "ENTITY_ENDER_DRAGON_GROWL"
+
+# Ritual altar: place the special Respawn Anchor and right-click it with the special Fire Charge.
+shop:
+  compass-price: 500
+team-event:
+  prize-per-player: 500
+
+ritual:
+  required-captures: 3
+  max-active-summons: 1
+  countdown-seconds: 5
+
+drop-protection:
+  enabled: true
+  spawn-radius-blocks: 128
+  worldguard: true
+  # The /md diagnose command reports the blocking source and these switches can be changed in /md admin.
+
+# Falling speed for the meteorite falling block cluster.
+meteor-fall-speed: 2
+
+# Visual settings for meteor descent and the short cinematic before the crater forms.
+meteor-animation:
+  enabled: true
+  # 0.1-1.5. Lower values send fewer particles per tick to reduce client/server load.
+  particle-density: 0.65
+  impact-particle-density: 0.5
+  particle-interval-ticks: 1
+  smoke-particles: 3
+  spiral-points: 5
+  spiral-radius: 1.15
+  warning-distance: 60
+  # Nearby players see a title and hear a cue as the meteor crosses each height.
+  countdown-heights: [30, 10]
+  countdown-radius: 128
+  countdown-title: "&c&l¡IMPACTO PRÓXIMO!"
+  countdown-subtitle: "&e{height} bloques · X: {x}, Z: {z}"
+  countdown-sound: "BLOCK_NOTE_BLOCK_BELL"
+  # A short dimming effect and expanding elemental ring happen just before impact.
+  darkness-before-impact: true
+  darkness-ticks: 12
+  visual-radius: 48
+  impact-delay-ticks: 12
+  normal-impact-delay-ticks: 4
+  impact-wave-radius: 10
+  impact-warning-sound: "ENTITY_WARDEN_SONIC_BOOM"
+
+# Delay in seconds to restore the crater once the chest is emptied.
+crater-restore-delay-seconds: 30
+
+# Maximum seconds after chest is unlocked before crater auto-restores even if not emptied.
+crater-max-stay-seconds: 180
+
+# If nobody opens the meteorite, restore it after this many seconds from landing.
+# The timeout never expires a chest before its configured unlock duration. Set 0 to disable.
+crater-unopened-timeout-seconds: 600
+
+# OdisseyChat impact announcement. Leave channel blank to use its "broadcasts" channel.
+discord:
+  broadcast-on-impact: true
+  channel: ""
+  impact-message: "☄ ¡METEORITO HA IMPACTADO! {type} en X: {x}, Z: {z} (mundo: {world}). ¡Vayan por el botín!"
+
+# Customizable plugin messages (Supports standard '&' color codes)
+messages:
+  broadcast-incoming: |
+    &8&m--------------------------------------------------
+    &e⚠️ &c&l¡ALERTA DE IMPACTO! &e⚠️
+    &7¡Un &e{type} &7ha sido avistado cayendo en las coordenadas &eX: {x}, Z: {z}&7!
+    &a¡El botín espera al más rápido!
+    &8&m--------------------------------------------------
+  broadcast-landed: |
+    &8&m--------------------------------------------------
+    &6☄ &e&l¡METEORITO HA IMPACTADO! &6☄
+    &7El meteorito &e{type} &7ha aterrizado en &eX: {x}, Z: {z}&7!
+    &c¡Asegura el cráter y prepárate para lootearlo!
+    &8&m--------------------------------------------------
+  broadcast-restoring: "&e⏳ ¡El botín ha sido recolectado! El cráter en &eX: {x}, Z: {z} &ese regenerará en &c{seconds} &esegundos."
+  broadcast-restored: "&a☄ El terreno del meteorito en &eX: {x}, Z: {z} &aha sido completamente restaurado."
+  broadcast-unopened-expired: "&e⌛ El meteorito {type} en X: {x}, Z: {z} expiró sin abrirse; se restaurará el terreno."
+  chest-locked: "&cEl cofre aún está sellado. Espera &e{remaining}s&c."
+  unlock-start: "&aComenzando a abrir el cofre del meteorito..."
+  unlock-interrupted: "&cFuiste interrumpido. Alguien más puede intentarlo."
+  unlock-complete: "&a¡Abriste el cofre del meteorito!"

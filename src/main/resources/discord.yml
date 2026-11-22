@@ -1,0 +1,38 @@
+# MeteoriteDrop Discord bot and bidirectional chat bridge.
+enabled: true
+bot-token: "YOUR_BOT_TOKEN_HERE"
+# Discord server (guild) ID. Slash commands require this value.
+guild-id: ""
+# Text channel used for chat and plugin announcements.
+channel-id: ""
+
+chat:
+  minecraft-to-discord: true
+  discord-to-minecraft: true
+  permission: "meteoritedrop.discordchat"
+  minecraft-format: "**{player}**: {message}"
+  discord-format: "&9[Discord] &b{player}&f: &7{message}"
+  # Empty means all global NonChat channels. Otherwise list channel IDs.
+  nonchat-channels: []
+
+debug: false
+
+events:
+  forward-to-discord: true
+  meteor-impact: true
+  meteor-landed: true
+  supply-landed: true
+  auto-drop-warning: true
+  loot-claimed: true
+  season-ended: true
+  rare-impact: true
+  meteoriteritual: true
+  cooperative-complete: true
+  combat-result: true
+  combat-leaderboard: true
+  meteor-unopened-expired: true
+
+discord-commands:
+  enabled: true
+  # Role IDs allowed to launch drops with /odyssey drop. Empty disables launching.
+  allowed-drop-role-ids: []
